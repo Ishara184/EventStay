@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+/*header*/
+
+header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 0 2rem;
+  background: #e7e3e3;
+  margin-bottom: 150px auto;
+}
+
+.nav{
+  list-style: none;
+}
+
+.nav_a{
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;  
+}
+
+.nav_a:hover{
+  color: #A9927D;
+}
+
+.btn_type1{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  background-color: #aaaaaa;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.btn_type1:hover{
+  color: #ffffff;
+  scale: 1.05;
+}
+
+.btn_type1:active{
+  scale: 0.95;
+}
+
+.profile-img{
+cursor: pointer;
+margin-left: 10px;
+}
+
+.navbar{
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shortcut{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.navbar .links{
+  display: flex;
+  gap: 2rem;
+}
+
+/*header end*/
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    min-height: 100vh;
+   
+   
+}
+
+    .container form {
+        padding: 20px;
+        width: 700px;
+        background: #fff;
+        box-shadow: 0 0 2.5rem rgba(0,0,0,0.28);
+        /* border: 1px solid black;*/
+        border-radius: 30px;
+    }
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+  border-radius:30px;
+}
+
+   .container form .row .col .inputBox textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-transform: none;
+        border-radius: 30px;
+    }
+ 
+
+    .container form .row .col .inputBox input:focus {
+        border: 1px solid #000;
+    }
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.inputBox select {
+  width: 265px;
+  border: 1px solid #ccc;
+  padding: 10px 35px;
+  border-radius: 30px;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.inputBox option {
+  font-size: 14px;
+
+}
+
+.container form .row .col .flexbox .inputBox {
+     margin-top: 5px;
+      
+    }
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #808080;
+  color:#fff;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius:30px;
+}
+
+    .container form .submit-btn:hover {
+        background: #908d8d;
+    }

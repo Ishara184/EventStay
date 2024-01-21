@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color:#fff ;
+}
+
+/*header*/
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 0 2rem;
+    background: #e7e3e3;
+    margin-bottom: 150px auto;
+}
+
+.nav{
+    list-style: none;
+}
+
+.nav_a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;  
+}
+
+.nav_a:hover{
+    color: #A9927D;
+}
+
+.btn_type1{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    background-color: #aaaaaa;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.btn_type1:hover{
+    color: #ffffff;
+    scale: 1.05;
+}
+
+.btn_type1:active{
+    scale: 0.95;
+}
+
+.profile-img{
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shortcut{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+/*header end*/
+
+/*Home Image Changer*/
+    .Home_top{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        background-image: url(images/hotel_images/the-kingsbury-hotel\ -\ 1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        justify-content: center;
+        animation: change 30s infinite ease-in-out;
+    }
+
+    .image-content{
+        background-color: #aaaaaa99;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+    }
+
+    .image-content h1{
+        color: #000000;
+        font-size: 100px;
+        letter-spacing: 10px;
+    }
+
+    .image-content h1 span{
+        color: #ffffff;
+    }
+
+    .image-content a{
+        background: #000000;
+        color: #aaaaaa;
+        padding: 10px 24px;
+        text-decoration: none;
+        font-size: 35px;
+        border-radius: 25px;
+    }
+
+    .image-content a:hover{
+        background: #aaaaaa;
+        color: #000000;
+    }
+
+
+    @keyframes change{
+        0%
+        {
+            background-image: url(hotel_images_top/134394306.jpg);
+        }
+        20%
+        {
+            background-image: url(hotel_images_top/queens_hotel.jpg);
+        }
+        40%
+        {
+            background-image: url(hotel_images_top/queens_hotel.jpg);
+        }
+        60%
+        {
+            background-image: url(hotel_images_top/colombo_2.jpg);
+        }
+        80%
+        {
+            background-image: url(hotel_images_top/gallery12.jpg);
+        }
+        100%
+        {
+            background-image: url(hotel_images_top/gallery12.jpg);
+        }
+    
+    }
+/*end*/
+
+
+/*who we are*/
+    .section{
+        width:100%;
+        min-height:80vh;
+    }
+
+    .container{
+        width:80%;
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .content-section{
+        float: left;
+        width: 55%;
+        box-shadow:0 0 2.5rem rgba(0, 0, 0,0.28);
+    }
+
+    .image-section{
+        float: right;
+        width: 40%;
+    }
+
+    .image-section img{
+        width: 120%;
+        height: auto;
+    }
+
+    .container .title{
+        text-transform: uppercase;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .container .content-section .content{
+        margin: 30px;
+    }
+
+    .content-section .content h3{
+        margin-top: 20px;
+        color: #373636; 
+        font-size: 25px;
+    }
+
+    .content-section .content p{
+        margin-top: 10px;
+        font-family: sans-serif;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+/*end*/
+
+
+/*why to choose us*/
+    .title {
+        color: #373636; 
+        font-size: 30px;
+        text-align: center;
+        position: relative;
+        padding-top:60px;
+    }
+
+    .flex-container{
+        width:100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 80px;
+        justify-content: center;
+    }
+
+    .flex-box{
+        width: 200px;
+        height: 100px;
+        background-color: #ffffff;
+        background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+        border-radius: 20px;
+        margin: 10px;
+        font-size: 25px;
+        text-align: center;
+        text-decoration-color: #ddd;
+        line-height: 100px;
+    }
+/*why to choose us end*/
+
+
+/*stretagy*/
+    .wrapper{
+        margin-top: 20px;
+        text-align: center ;
+        margin-bottom:70px;
+    }
+
+    .wrapper .stretagy{
+        display: flex;
+        width: auto;
+        justify-content: center;
+    }
+
+    .wrapper .stretagy .target{
+        width:300px;
+        margin: 20px;
+        margin-right: 50px;
+        margin-left:50px ;
+        justify-content: center;
+        background-color: #fff;
+        padding: 10px 10px;
+        box-shadow:0 0 2.5rem rgba(0, 0, 0,0.28);
+    }
+
+
+    .wrapper .stretagy .target .target-image{
+        margin: 0 auto;
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .wrapper .stretagy .target .target-image img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .wrapper .stretagy .target h4{
+        margin-bottom: 50px;
+        font-size: 22px;
+    }
+
+    .wrapper .stretagy .target p{
+        justify-content: center;
+        margin: 20px;
+    }
+/*stratgy end*/
+
+
+/*Responsive*/
+    @media screen and (max-width:768px) {
+        .container{
+            width: 80%;
+            display: block;
+            margin: auto;
+            padding-top: 50px;
+        }
+
+        .content-section{
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+
+        .image-section{
+            float: none;
+            width: 100%;
+        }
+
+        .image-section img{
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+
+        .content-section .title{
+            text-align:center;
+            font-size: 19px;
+        }
+
+        .wrapper{
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+            float: none;
+        }
+
+        .wrapper .stretag{
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+
+        .wrapper .stretagy .target{
+            float: none;
+            width: 100%;
+            display: block;
+            margin: auto;
+        }
+
+        .wrapper .stretagy .target .target-image{
+            float: none;
+            width: 100%;
+        }
+    }
+/*end*/

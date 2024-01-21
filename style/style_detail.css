@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #282828;
+}
+
+/*header*/
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 0 2rem;
+    background: #e7e3e3;
+    margin-bottom: 150px auto;
+}
+
+.nav{
+    list-style: none;
+}
+
+.nav_a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;  
+}
+
+.nav_a:hover{
+    color: #A9927D;
+}
+
+.btn_type1{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    background-color: #aaaaaa;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.btn_type1:hover{
+    color: #ffffff;
+    scale: 1.05;
+}
+
+.btn_type1:active{
+    scale: 0.95;
+}
+
+.profile-img{
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shortcut{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+/*header end*/
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #f3f3f3;
+    padding: 30px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.single-hotel {
+    margin-top: 50px;
+}
+
+.small-img-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+    border-radius: 30px;
+    filter: grayscale(40%);
+}
+
+.small-img-col {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.single-hotel .col-2 img {
+    padding: 0;
+}
+
+.single-hotel .col-2 {
+    padding: 10px;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 500px;
+    margin-top: -10px;
+}
+
+.col-2 h1 {
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.col-2 h5 {
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.hotel-info h3 i {
+    margin-left: 3px;
+    font-size: 18px;
+}
+
+.ratings {
+    margin-left: 180px;
+    position: absolute;
+    margin-top: -30px;
+}
+
+.ratings span:last-child {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.ratings span i{
+    font-size: 14px;
+}
+
+.hotel-info p {
+    font-size: 14px;
+    line-height: 1.5rem;
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.services ul {
+    list-style: none;
+    display: block;
+}
+
+.services ul li {
+    font-size: 14px;
+    line-height: 1.6rem;
+}
+
+.services ul li i {
+    margin-right: 10px;
+    color: #888888;
+}
+
+.services ul li span {
+    font-weight: 500;
+}
+
+.button {
+    margin-top: 30px;
+    min-width: 300px;
+}
+
+.reserve {
+    border-radius: 30px;
+    padding: 6px 25px;
+    background: #cccccc;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.reserve:hover {
+    background: #dddddd;
+}
+
+.button a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.button .price {
+    margin-left: 20px;
+}
+
+.price {
+    border-radius: 30px;
+    padding: 6px 25px;
+    background: #cccccc;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+}
+
+.price span {
+    font-weight: 500;
+    font-size: 15px;
+}
